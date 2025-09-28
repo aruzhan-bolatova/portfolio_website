@@ -38,9 +38,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "",
-    title: "Toukoum Portfolio",
+    title: "Aruzhan's Portfolio",
     description: "Interactive portfolio with an AI-powered Memoji that answers questions about me",
-    siteName: "Toukoum Portfolio",
+    siteName: "Aruzhan's Portfolio",
   },
   icons: {
     icon: [
