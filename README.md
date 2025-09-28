@@ -1,6 +1,6 @@
 # Aruzhan's AI Portfolio 🤖✨
 
-![image](assets/readme-photo.png)
+![image](public/readme-photo.png)
 
 **Static portfolios are dead.**  
 This is an interactive AI-powered portfolio that adapts to *you*.  
