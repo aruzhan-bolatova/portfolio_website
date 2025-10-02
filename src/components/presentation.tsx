@@ -8,12 +8,12 @@ export function Presentation() {
   // Personal information
   const profile = {
     name: 'Aruzhan Bolatova',
-    age: '22 years old',
+    university: 'New York University',
     location: 'Abu Dhabi, UAE',
     // Add a newline character after the emoji
     description:
-      "Hey 👋\nI'm Aru. I'm a Computer Science student at NYU, specializing in full-stack development and AI. I am passionate about tech for good and building products that help people.",
-    src: '/about-aru.png',
+      "Hey 👋\nI'm Aru. I'm a Computer Science student at NYU, specializing in full-stack development and AI. I am passionate about tech for good and building products that help people. \n\nPlease play around with my Digital Twin AI agent to get to know me better! Also check out my projects and resume below.",
+    src: '/about-me.png',
     fallbackSrc:
       'https://drive.google.com/file/d/17icIqXIcL1IiiwJZ9PFg-tl1H26QHW2_/view?usp=sharing',
   };
@@ -81,7 +81,7 @@ export function Presentation() {
               {profile.name}
             </h1>
             <div className="mt-1 flex flex-col gap-1 md:flex-row md:items-center md:gap-4">
-              <p className="text-muted-foreground">{profile.age}</p>
+              <p className="text-muted-foreground">{profile.university}</p>
               <div className="bg-border hidden h-1.5 w-1.5 rounded-full md:block" />
               <p className="text-muted-foreground">{profile.location}</p>
             </div>
