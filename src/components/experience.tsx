@@ -21,10 +21,10 @@ interface ExperienceItem {
 const experiences: ExperienceItem[] = [
   {
     id: '1',
-    position: 'Software Engineering Intern',
+    position: 'Software Engineering Intern (Health Tech & AI Domain',
     company: 'Panio',
     location: 'Dubai, UAE (remote)',
-    period: 'Summer 2025',
+    period: 'May 2025 - Sep 2025',
     type: 'internship',
     description: 'Starting from empty GitHub repo, contributed to building AI-driven health solutions by developing scalable backend systems, automation pipelines, and R&D tools.',
     technologies: ['React Native', 'Flask (Python)', 'PostgreSQL - SQLAlchemy', 'GraphQL', 'Docker', 'LangChain', 'n8n', 'Cursor IDE'],
@@ -37,10 +37,10 @@ const experiences: ExperienceItem[] = [
   },
   {
     id: '2',
-    position: 'Health Tech Data & ML Intern',
-    company: 'Bequalise',
+    position: 'Software Engineering Intern (IoT & AI Domain)',
+    company: 'Brea (Bequalise)',
     location: 'Milan, Italy (remote)',
-    period: 'Summer 2025',
+    period: 'May 2025 - present',
     type: 'internship',
     description: 'Worked on wearable health technology by developing data pipelines, ML algorithms, and intuitive mobile interfaces for patient monitoring.',
     technologies: ['React Native', 'TypeScript', 'TensorFlow Lite'],
@@ -49,14 +49,30 @@ const experiences: ExperienceItem[] = [
       'Engineered algorithms for real-time respiratory and postural analysis using peak detection, FFT, and Kalman filtering',
       'Built intuitive mobile app interfaces to visualize model outputs and longitudinal data'
     ],
-    companyUrl: 'https://www.bequalise.com/'
+    companyUrl: 'https://www.breavital.com/'
   },
   {
     id: '3',
-    position: 'Undergraduate Researcher',
-    company: 'Computational Biology and Bioinformatics Lab',
+    position: 'Undergraduate Research Assistant',
+    company: 'NYU Abu Dhabi E-Brain Lab',
     location: 'Abu Dhabi, UAE',
-    period: 'Mar 2025 - Present',
+    period: 'Jan 2026 - present',
+    type: 'part-time',
+    description: 'Developed a hallucination detection and mitigation system for medical LVLMs.',
+    technologies: ['Python'],
+    achievements: [
+      'Review literature on hallucination detection and mitigation in medical LVLMs, synthesizing frameworks from 10+ studies.',
+      'Develop a novel dataset creation pipeline for hallucination evaluation metrics and structured prompt sets to assess both general-purpose and domain-specific models on clinical reasoning tasks.',
+      'Develop evaluation scripts and dashboards to track model performance and provide weekly updates to supervisors.'
+        ],
+    companyUrl: 'https://ebrain4everyone.com/'
+  },
+  {
+    id: '4',
+    position: 'Undergraduate Research Assistant',
+    company: 'NYU Abu Dhabi Computational Biology and Bioinformatics Lab',
+    location: 'Abu Dhabi, UAE',
+    period: 'Mar 2025 - Jan 2026',
     type: 'part-time',
     description: 'Lead senior thesis on endometriosis ML-based screening using microbiome data.',
     technologies: ['Python Weka Wrapper', 'QIIME2', 'sra-tools', 'fastx', 'scikit-learn', 'scikit-bio', 'pandas', 'matplotlib', 'seaborn'],
@@ -64,10 +80,12 @@ const experiences: ExperienceItem[] = [
       'Designed predictive ML models to identify microbiome-based biomarkers.',
       'Conducted comprhensive literature review on microbiome-endometriosis associations and ML applications in clinical diagnostics',
       'Processed and analyzed 16S rRNA sequencing data and associated clinical metadata using SRA and FastX tools',
-    ]
+      'Paper accepted at the 2026 IEEE International Conference on Healthcare Informatics (ICHI) in Minneapolis, USA'
+    ],
+    companyUrl: 'https://wp.nyu.edu/cbb_lab/about/'
   },
   {
-    id: '4',
+    id: '5',
     position: 'Data Analyst Intern',
     company: 'Ministry of Digital Development, Innovation and Aerospace Industries of Kazakhstan',
     location: 'Astana, Kazakhstan',
@@ -147,7 +165,9 @@ const Experience = () => {
                         <Building2 className="h-4 w-4" />
                         <span className="font-medium">{experience.company}</span>
                         {experience.companyUrl && (
-                          <ExternalLink className="h-3 w-3 opacity-60" />
+                          <a href={experience.companyUrl} target="_blank" rel="noopener noreferrer">
+                            <ExternalLink className="h-3 w-3 opacity-60" />
+                          </a>
                         )}
                       </div>
                       <div className="flex flex-wrap items-center gap-4 mt-2 text-sm text-muted-foreground">

@@ -7,6 +7,60 @@ import { url } from 'inspector';
 // Enhanced project content array with all projects
 const PROJECT_CONTENT = [
   {
+    title: 'QAgen',
+    description:
+    "QAgen - AI Driven Automated QA Engine. Built an Al-powered QA system that converts product requirements and URLs into executable Selenium tests, reducing manual test-case writing time by 80%. Designed a modular backend pipeline for document parsing, Ul context extraction, LLM-driven test generation, automated execution, and structured reporting dashboards to ensure reproducible QA workflows.",
+    techStack: ['Flask', 'LangChain', 'GeminiAPI', 'Selenium', 'BeautifulSoup'],
+    date: '2026',
+    links: [
+      {
+        name: 'Pitch Deck',
+        url: 'https://canva.link/kvtf0svllbhsd4x',
+      }
+    ],
+    images: [
+      {
+        src: '/qa1.png',
+        alt: 'QAgen',
+      }
+    ],
+  },
+  {
+    title: 'SkinVision',
+    description:
+    "SkinVision - Skin Cancer Classification with Deep Learning. Developed an end-to-end deep learning pipeline for multi-class skin lesion classification using 10k+ dermatoscopic images. Implemented and compared ResNet, DenseNet, EfficientNet, and YOLOv8 classifiers with transfer learning, advanced augmentation, and staged fine-tuning. Achieved >85% accuracy across all models, with YOLOv8 reaching 88.5% accuracy (F1: 0.88, Precision: 0.88).",
+    techStack: ['Python', 'PyTorch', 'Matplotlib', 'CNN Architectures', 'YOLOv8'],
+    date: '2025',
+    links: [
+      {
+        name: 'Presentation',
+        url: 'https://docs.google.com/presentation/d/1YZJcm0vbAJpj3OkXWUdPyMjbFwNdcrR7YZ4vJaqpVtQ/edit?usp=sharing',
+      }
+    ],
+    images: [
+      {
+        src: '/skin-cancer.png',
+        alt: 'Skin Cancer Classification',
+      },
+      {
+        src: '/skin-cancer1.png',
+        alt: 'Skin Cancer Classification',
+      },
+      {
+        src: '/skin-cancer2.png',
+        alt: 'Skin Cancer Classification',
+      },
+      {
+        src: '/skin-cancer3.png',
+        alt: 'Skin Cancer Classification',
+      },
+      {
+        src: '/skin-cancer4.png',
+        alt: 'Skin Cancer Classification',
+      }
+    ],
+  },
+  {
     title: 'Foodify',
     description:
       "Foodify 🍽️ – Your personal foodie compass! Discover top-rated eats around NYU Manhattan with a swipe. Foodify fuses Yelp and Google reviews, smart filters, and map views to help you explore, curate, and share restaurant “playlists” your way. Swipe, save, and savor.",
@@ -388,7 +442,7 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
                   src={image.src}
                   alt={image.alt}
                   fill
-                  className="object-cover transition-transform"
+                  className="object-contain transition-transform"
                 />
               </div>
             ))}
@@ -401,6 +455,18 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
 
 // Main data export with updated content
 export const data = [
+  {
+    category: 'AI Product',
+    title: 'QAgen',
+    src: '/qa-preview.png',
+    content: <ProjectContent project={{ title: 'QAgen' }} />,
+  },
+  {
+    category: 'ML Project',
+    title: 'SkinVision',
+    src: '/skin-cancer-preview.png',
+    content: <ProjectContent project={{ title: 'SkinVision' }} />,
+  },
   {
     category: 'Full-Stack Project',
     title: 'Foodify',

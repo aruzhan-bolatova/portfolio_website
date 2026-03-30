@@ -43,17 +43,22 @@ const education: EducationItem[] = [
         period: '2022 - 2026',
         type: 'university',
         status: 'in-progress',
-        description: 'Pursuing a Computer Science degree with focus on AI, software engineering, and data science. Minors in Applied Maths and Natural Sciences.',
-        gpa: '3.8/4.0',
+        description: 'Pursuing a Computer Science degree with focus on AI, software engineering, and data science. Minors in Applied Maths and Natural Sciences. Capstone project: Microbiome-Based Non-Invasive Screening for Endometriosis Using Machine Learning',
+        gpa: '3.9/4.0',
         relevantCourses: [
+            'Advanced AI and ML',
+            'Machine Learning',
             'Data Structures',
             'Algorithms',
             'Machine Learning',
             'Software Engineering',
-            'Database Systems',
-            'Computer Networks',
+            'Software Architecture',
             'Operating Systems',
-            'Computer System Organization',
+            'Data Analysis with Python',
+            'Human-centered Data Science',
+            'Ordinary Differential Equations',
+            'Linear Algebra',
+            'Probability and Statistics'
         ],
         url: 'https://nyuad.nyu.edu/'
     },
@@ -83,11 +88,29 @@ const certifications: CertificationItem[] = [
         name: 'Fundamentals of Machine Learning in Healthcare',
         issuer: 'Stanford University',
         date: 'March 2025',
-        credentialId: 'AWS-CCP-2024',
         skills: ['Machine Learning', 'Healthcare'],
         url: 'https://coursera.org/share/7220f5cf44dfae56e78d2801afc5dc1f'
     },
     
+];
+
+interface PublicationItem {
+    id: string;
+    title: string;
+    authors: string[];
+    date: string;
+    url: string;
+    publication: string;
+}
+const publications: PublicationItem[] = [
+    {
+        id: '1',
+        title: 'Microbiome-Based Non-Invasive Screening for Endometriosis Using Machine Learning',
+        authors: ['Aruzhan Bolatova', 'Mai Oudah'],
+        date: '2026',
+        url: '',
+        publication: 'Status: Accepted at IEEE International Conference on Healthcare Informatics (ICHI) 2026'
+    }
 ];
 
 const Education = () => {
@@ -313,6 +336,50 @@ const Education = () => {
                                             </a>
                                         </div>
                                     )}
+                                </CardContent>
+                            </Card>
+                        </motion.div>
+                    ))}
+                </div>
+            </motion.div>
+
+            {/* Publications Section */}
+            <motion.div
+                variants={containerVariants}
+                initial="hidden"
+                animate="visible"
+            >
+                <motion.h2
+                    variants={itemVariants}
+                    className="text-2xl font-bold text-foreground mb-8 flex items-center gap-2"
+                >
+                    <BookOpen className="h-6 w-6 text-green-600" />
+                    Publications
+                </motion.h2>
+
+                <div className="grid gap-6">
+                    {publications.map((pub) => (
+                        <motion.div key={pub.id} variants={itemVariants}>
+                            <Card className="group hover:shadow-lg transition-all duration-300 hover:scale-105 h-full">
+                                <CardHeader className="pb-1">
+                                    <CardTitle className="text-lg font-bold text-foreground group-hover:text-green-600 transition-colors flex items-center gap-2">
+                                        <BookOpen className="h-4 w-4" />
+                                        {pub.title}
+                                    </CardTitle>
+                                </CardHeader>
+                                <CardContent className="space-y-3">
+                                    <a href={pub.url} target="_blank" rel="noopener noreferrer">
+                                        Link: {pub.url} 
+                                    </a>
+                                    <p className="text-sm text-muted-foreground leading-relaxed">
+                                        {pub.publication}
+                                    </p>
+                                    <p className="text-sm text-muted-foreground leading-relaxed">
+                                        Authors: {pub.authors.join(', ')}
+                                    </p>
+                                    <p className="text-sm text-muted-foreground leading-relaxed">
+                                        Year: {pub.date}
+                                    </p>                             
                                 </CardContent>
                             </Card>
                         </motion.div>
