@@ -21,7 +21,7 @@ interface ExperienceItem {
 const experiences: ExperienceItem[] = [
   {
     id: '1',
-    position: 'Software Engineering Intern (Health Tech & AI Domain',
+    position: 'Software Engineering Intern (Health Tech & AI Domain)',
     company: 'Panio',
     location: 'Dubai, UAE (remote)',
     period: 'May 2025 - Sep 2025',
