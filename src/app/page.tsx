@@ -4,6 +4,7 @@ import FluidCursor from '@/components/FluidCursor';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { MessageCircle, ChevronDown, Menu, X, File, Download} from 'lucide-react';
+import { ThemeToggle } from '@/components/theme-toggle';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { Presentation } from '@/components/presentation';
@@ -158,6 +159,7 @@ export default function Home() {
     <div className="relative overflow-hidden">
       {/* Navigation */}
       <Navigation />
+      <ThemeToggle />
 
       {/* Hero Section */}
       <section id="home" className="relative flex min-h-screen flex-col items-center justify-center px-4 pb-10">
