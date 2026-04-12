@@ -1,36 +1,22 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
+import { Resume } from '@/components/resume';
 
 export function Contact() {
-  // Contact information
   const contactInfo = {
     name: 'Aruzhan Bolatova',
     email: 'ab10028@nyu.edu',
     handle: '@Aruzhan.Bolatova',
     socials: [
-      {
-        name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/aruzhan-bolatova/',
-      },
-      {
-        name: 'Instagram',
-        url: 'https://www.instagram.com/aru_bolatova/',
-      },
-      {
-        name: 'Discord',
-        url: 'https://discord.com/users/aruzhan.b.10028',
-      },
-      {
-        name: 'Github',
-        url: 'https://github.com/aruzhan-bolatova',
-      }
+      { name: 'LinkedIn', url: 'https://www.linkedin.com/in/aruzhan-bolatova/' },
+      { name: 'Instagram', url: 'https://www.instagram.com/aru_bolatova/' },
+      { name: 'Discord', url: 'https://discord.com/users/aruzhan.b.10028' },
+      { name: 'Github', url: 'https://github.com/aruzhan-bolatova' },
     ],
   };
 
-  // Function to handle opening links
   const openLink = (url: string) => {
     window.open(url, '_blank', 'noopener,noreferrer');
   };
@@ -77,6 +63,9 @@ export function Contact() {
           </div>
         </div>
       </div>
+
+      {/* Resume Download */}
+      <Resume />
     </div>
   );
 }
