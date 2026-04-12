@@ -11,7 +11,6 @@ import { Presentation } from '@/components/presentation';
 import AllProjects from '@/components/projects/AllProjects';
 import Skills from '@/components/skills';
 import Contact from '@/components/contact';
-import Resume from '@/components/resume';
 import Experience from '@/components/experience';
 import Education from '@/components/education';
 
@@ -450,18 +449,7 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-      <section id="resume" className="relative min-h-screen py-20 px-4">
-        <div className="mx-auto max-w-6xl">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <Resume />
-          </motion.div>
-        </div>
-      </section>
+
 
       <FluidCursor />
     </div>
