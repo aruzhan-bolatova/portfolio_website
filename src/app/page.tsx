@@ -9,6 +9,7 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { Presentation } from '@/components/presentation';
 import AllProjects from '@/components/projects/AllProjects';
+import AllHobbies from '@/components/hobbies/AllHobbies';
 import Skills from '@/components/skills';
 import Contact from '@/components/contact';
 import Experience from '@/components/experience';
@@ -26,6 +27,7 @@ const Navigation = () => {
     { id: 'experience', label: 'Experience' },
     { id: 'education', label: 'Education' },
     { id: 'skills', label: 'Skills' },
+    { id: 'hobbies', label: 'Hobbies' },
     { id: 'contact', label: 'Contact' },
   ];
 
@@ -419,6 +421,33 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <Skills />
+          </motion.div>
+        </div>
+      </section>
+
+
+      {/* Hobbies Section */}
+      <section id="hobbies" className="relative min-h-screen py-20 px-4">
+        <div className="mx-auto max-w-7xl">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="mb-4 text-center"
+          >
+            <p className="text-muted-foreground text-lg">
+              Beyond the screen &#8212; what keeps me alive
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <AllHobbies />
           </motion.div>
         </div>
       </section>
