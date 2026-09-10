@@ -21,22 +21,6 @@ interface ExperienceItem {
 const experiences: ExperienceItem[] = [
   {
     id: '1',
-    position: 'Software Engineering Intern (Health Tech & AI Domain)',
-    company: 'Panio',
-    location: 'Dubai, UAE (remote)',
-    period: 'May 2025 - Sep 2025',
-    type: 'internship',
-    description: 'Starting from empty GitHub repo, contributed to building AI-driven health solutions by developing scalable backend systems, automation pipelines, and R&D tools.',
-    technologies: ['React Native', 'Flask (Python)', 'PostgreSQL - SQLAlchemy', 'GraphQL', 'Docker', 'LangChain', 'n8n', 'Cursor IDE'],
-    achievements: [
-      'Built backend modules to parse unstructured medical data with OCR and AI-powered processing.',
-      'Engineered an AI engine with LangChain to deliver tailored health insights from longitudinal data.',
-      'Designed multi-agent automation for bug triaging, product feedback, and task routing.'
-    ],
-    companyUrl: 'https://panio.io/'
-  },
-  {
-    id: '2',
     position: 'Software Engineering Intern (IoT & AI Domain)',
     company: 'Brea (Bequalise)',
     location: 'Milan, Italy (remote)',
@@ -52,23 +36,58 @@ const experiences: ExperienceItem[] = [
     companyUrl: 'https://www.breavital.com/'
   },
   {
+    id: '2',
+    position: 'Software Engineering Intern (Health Tech & AI Domain)',
+    company: 'Panio',
+    location: 'Dubai, UAE (remote)',
+    period: 'May 2025 - Sep 2025',
+    type: 'internship',
+    description: 'Starting from empty GitHub repo, contributed to building AI-driven health solutions by developing scalable backend systems, automation pipelines, and R&D tools.',
+    technologies: ['React Native', 'Flask (Python)', 'PostgreSQL - SQLAlchemy', 'GraphQL', 'Docker', 'LangChain', 'n8n', 'Cursor IDE'],
+    achievements: [
+      'Built backend modules to parse unstructured medical data with OCR and AI-powered processing.',
+      'Engineered an AI engine with LangChain to deliver tailored health insights from longitudinal data.',
+      'Designed multi-agent automation for bug triaging, product feedback, and task routing.'
+    ],
+    companyUrl: 'https://panio.io/'
+  },
+  {
     id: '3',
+    position: 'AI Solutions Builder',
+    company: 'Extella AI',
+    location: 'Almaty, Kazakhstan',
+    period: 'April 2026 - June 2026',
+    type: 'part-time',
+    description: 'Built AI-driven workflow automation solutions',
+    technologies: ['APIs', 'ChatGPT API', 'Claude API', 'Cursor IDE', 'GitHub', 'Linear', 'Slack', 'Python'],
+    achievements: [
+      'Developed and deployed AI-driven workflow automation solutions (“Experts”) that translated operational pain points into scalable AI automation systems using multi-agent orchestration, persistent memory, and reusable execution pipelines',
+      'Designed prompt architectures, evaluation workflows and reusable agents focused on cost-efficiency and seamless end-user adoption',
+      'Built production-ready presets integrating enterprise collaboration tools including Slack, GitHub, and Linear to automate standups, QA coordination, project tracking and developer productivity workflows',
+      'Created technical to communicate platform capabilities, accelerate onboarding and support product adoption'
+    ],
+    companyUrl: 'https://extella.ai/'
+  },
+  {
+    id: '4',
     position: 'Undergraduate Research Assistant',
     company: 'NYU Abu Dhabi E-Brain Lab',
     location: 'Abu Dhabi, UAE',
-    period: 'Jan 2026 - present',
+    period: 'Jan 2026 - Aug 2026',
     type: 'part-time',
     description: 'Developed a hallucination detection and mitigation system for medical LVLMs.',
     technologies: ['Python'],
     achievements: [
-      'Review literature on hallucination detection and mitigation in medical LVLMs, synthesizing frameworks from 10+ studies.',
-      'Develop a novel dataset creation pipeline for hallucination evaluation metrics and structured prompt sets to assess both general-purpose and domain-specific models on clinical reasoning tasks.',
-      'Develop evaluation scripts and dashboards to track model performance and provide weekly updates to supervisors.'
-        ],
+      'Investigated hallucination detection in medical large vision-language models (LVLMs), reviewing 10+ studies to identify methodological limitations in existing hallucination benchmarks and evaluation protocols',
+      'Designed a benchmarking and dataset creation pipeline for evaluating hallucinations in medical AI, developing structured clinical reasoning tasks, prompt sets, and evaluation criteria to assess model factuality and reliability',
+      'Conducted large-scale evaluation of 11 medical LVLMs and general-purpose baselines, including GPT-4o, LLaVA-NeXT, and MiniGPT-4, across standardized medical question-answering and image-grounded reasoning tasks',
+      'Implemented automated evaluation pipelines for model inference, response collection, scoring, and comparative analysis, enabling reproducible experimentation across models and benchmark configurations',
+      'Completed the Post-Graduation Practical Training Program under the supervision of Prof. Muhammad Shafique'
+    ],
     companyUrl: 'https://ebrain4everyone.com/'
   },
   {
-    id: '4',
+    id: '5',
     position: 'Undergraduate Research Assistant',
     company: 'NYU Abu Dhabi Computational Biology and Bioinformatics Lab',
     location: 'Abu Dhabi, UAE',
@@ -77,15 +96,17 @@ const experiences: ExperienceItem[] = [
     description: 'Lead senior thesis on endometriosis ML-based screening using microbiome data.',
     technologies: ['Python Weka Wrapper', 'QIIME2', 'sra-tools', 'fastx', 'scikit-learn', 'scikit-bio', 'pandas', 'matplotlib', 'seaborn'],
     achievements: [
-      'Designed predictive ML models to identify microbiome-based biomarkers.',
-      'Conducted comprhensive literature review on microbiome-endometriosis associations and ML applications in clinical diagnostics',
-      'Processed and analyzed 16S rRNA sequencing data and associated clinical metadata using SRA and FastX tools',
-      'Paper accepted at the 2026 IEEE International Conference on Healthcare Informatics (ICHI) in Minneapolis, USA'
+      'Led senior thesis research on microbiome-based machine learning for non-invasive endometriosis screening, defining the research question, objectives, experimental methodology, and evaluation framework under faculty supervision',
+      'Built a reproducible ML pipeline using 16S rRNA microbiome data, implementing preprocessing, feature selection, model training, cross-validation, and statistical analysis with Scikit-learn and bioinformatics tools',
+      'Benchmarked eight classical and deep learning models, including Random Forest, AdaBoost, and MLP, using cross-validation and a held-out test set, achieving preliminary performance of F1: 0.87 and ROC-AUC: 0.95',
+      'Applied feature selection methods to reduce noise and multicollinearity, increasing model accuracy by 5–20%',
+      'Identified potential genus-level microbial biomarkers associated with endometriosis through differential abundance analysis',
+      'Manuscript presented and published at the IEEE International Conference on Healthcare Informatics (USA) and ACM Conference on Bioinformatics, Computational Biology, and Health Informatics (Italy)',
     ],
     companyUrl: 'https://wp.nyu.edu/cbb_lab/about/'
   },
   {
-    id: '5',
+    id: '6',
     position: 'Data Analyst Intern',
     company: 'Ministry of Digital Development, Innovation and Aerospace Industries of Kazakhstan',
     location: 'Astana, Kazakhstan',

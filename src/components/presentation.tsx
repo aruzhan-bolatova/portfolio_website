@@ -12,7 +12,7 @@ export function Presentation() {
     location: 'Abu Dhabi, UAE',
     // Add a newline character after the emoji
     description:
-      "Hey 👋\nI'm Aru. I'm a Computer Science student at NYU, specializing in full-stack development and AI. I am passionate about tech for good and building products that help people. \n\nPlease play around with my Digital Twin AI agent to get to know me better! Also check out my projects and resume below.",
+      "Hey 👋\nI'm Aru. I'm a Computer Science graduate from NYU, specializing in full-stack development and AI. I am passionate about tech for good and building products that help people. \n\nPlease play around with my Digital Twin AI agent to get to know me better! Also check out my projects and resume below.",
     src: '/about-me.png',
     fallbackSrc:
       'https://drive.google.com/file/d/17icIqXIcL1IiiwJZ9PFg-tl1H26QHW2_/view?usp=sharing',

@@ -108,8 +108,16 @@ const publications: PublicationItem[] = [
         title: 'Microbiome-Based Non-Invasive Screening for Endometriosis Using Machine Learning',
         authors: ['Aruzhan Bolatova', 'Mai Oudah'],
         date: '2026',
-        url: '',
-        publication: 'Status: Accepted at IEEE International Conference on Healthcare Informatics (ICHI) 2026'
+        url: 'https://ieeexplore.ieee.org/document/11635015',
+        publication: 'IEEE International Conference on Healthcare Informatics (ICHI) 2026'
+    },
+    {
+        id: '2',
+        title: 'Endometriosis Screening Using Machine Learning And Microbiome Analysis',
+        authors: ['Aruzhan Bolatova', 'Mai Oudah'],
+        date: '2026',
+        url: 'https://dl.acm.org/doi/full/10.1145/3807503.3819437',
+        publication: "The 17th ACM International Conference on Bioinformatics, Computational Biology and Health Informatics (ACM BCB '26)"
     }
 ];
 
